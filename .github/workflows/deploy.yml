@@ -14,8 +14,8 @@ jobs:
     env:
       MONGODB_CONNECTION_PROTOCOL: mongodb+srv
       MONGODB_CLUSTER_ADDRESS: cluster0.suptvfn.mongodb.net
-      MONGODB_USERNAME: ${{ env.MONGODB_USERNAME }}
-      MONGODB_PASSWORD: ${{ env.MONGODB_PASSWORD }}
+      MONGODB_USERNAME: ${{ vars.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ vars.MONGODB_PASSWORD }}
       PORT: 8080
     steps:
       - name: Get Code
